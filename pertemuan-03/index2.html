@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willy B Aja</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      background-color: #4a47a3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    h2 {
+      color: #4a47a3;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    #about {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(13, 1, 245, 0.1);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    #about p {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    #about strong {
+      min-width: 180px;
+      color: #1e06db;
+      font-weight: 600;
+    }
+
+    /* Contact Form */
+    #contact {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4a47a3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #363283;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #4a47a3;
+      color: white;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      #about p {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #about strong {
+        padding-right: 0;
+        margin-bottom: 4px;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>INI HEADER ☺️</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Selamat Datang 😄</h2>
+      <p>Ini adalah contoh paragraf HTML.</p>
+    </section>
+
+    <section id="about">
+      <h2>Tentang Willy Zhea</h2>
+      <p><strong>NIM:</strong>2511500026</p>
+      <p><strong>Nama:</strong>Willy Zhea Risti</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong>Pangkal Pinang, 04 Januari 2007</p>
+      <p><strong>Alamat:</strong>Bukit Baru, Jl. Nangka</p>
+      <p><strong>Hobi:</strong>Mendengarkan musik, memancing, dan bermain game</p>
+      <p><strong>Cita-cita:</strong>Menjadi programmer, proplayer, engineer</p>
+      <p><strong>Pasangan:</strong>For now I just love myself (Jomblo jir :v 😢)</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <form action="#">
+        <label for="txtnama">Nama:</label>
+        <input type="text" id="txtnama" name="txtname" placeholder="Masukkan nama" required autocomplete="name">
+
+        <label for="txtemail">Email:</label>
+        <input type="email" id="txtemail" name="txtemail" placeholder="Masukkan email" required autocomplete="email">
+
+        <label for="txtpesan">Pesan:</label>
+        <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="Masukkan pesan" required></textarea>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Willy Zhea Risti [2511500026]</p>
+  </footer>
+
+</body>
+</html>
