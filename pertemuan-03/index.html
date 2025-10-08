@@ -42,27 +42,45 @@
                 }
             }
 
-            .shadow-dance-text {
+            .wave-text span {
+    display: inline-block;
     font-size: 4rem;
-    color: #fff;
-    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
-    animation: shadow-dance 2s infinite;
+    animation: wave 2s ease-in-out infinite;
 }
 
-@keyframes shadow-dance {
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
     0%, 100% {
-        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+        transform: translateY(0);
     }
     50% {
-        text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+        transform: translateY(-20px);
     }
 }
+
 
 </style>
 </head>
 <body>
 <header>
-    <h1>INI HEADER&#9786;</h1>
+    <div class="wave-container">
+    <h1 class="wave">
+        <span>HE</span><span>AD</span><span>E</span><span>R</span>
+    </h1>
+</div>
+
 <nav>
     <ul>
         <li><a href="#home">beranda</a></li>
