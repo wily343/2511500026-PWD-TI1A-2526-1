@@ -67,38 +67,93 @@
     overflow: hidden;
 }
 
+/* Removed orphaned CSS block */
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff000;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
 </style>
-/* Animasi Keren untuk Text Header */
-.animated-header {
-    font-size: 4rem;
-    font-weight: bold;
-    background: linear-gradient(270deg, #ff005e, #fffb00, #00ff85, #00d4ff, #ff00c8, #ff005e);
-    background-size: 1200% 1200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    animation: gradientMove 3s linear infinite, wave 2s ease-in-out infinite;
-    letter-spacing: 2px;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    20% { transform: translateY(-10px); }
-    40% { transform: translateY(10px); }
-    60% { transform: translateY(-10px); }
-    80% { transform: translateY(10px); }
-}
-<body>
+<body
 <header>
-    <div class="wave-container">
-    <h1 class="animated-header">HEADER</h1>
+    <div class="ring">
+    <h1>HEADER</h1>
     </div>
 
 <nav>
