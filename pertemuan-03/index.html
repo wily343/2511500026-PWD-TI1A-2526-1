@@ -48,128 +48,24 @@
     text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
     animation: shadow-dance 2s infinite;
 }
-
-@keyframes shadow-dance {
-    0%, 100% {
-        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
-    }
-    50% {
-        text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
-    }
-}
-
-.wave-container {
-    position: relative;
-    background: linear-gradient(90deg, #ff005e, #fffb00, #00ff85, #00d4ff, #ff00c8, #ff005e);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    overflow: hidden;
-}
-
-/* Removed orphaned CSS block */
-.ring
-{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:150px;
-  height:150px;
-  background:transparent;
-  border:3px solid #3c3c3c;
-  border-radius:50%;
-  text-align:center;
-  line-height:150px;
-  font-family:sans-serif;
-  font-size:20px;
-  color:#0a34de;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  text-shadow:0 0 10px #1c0df1;
-  box-shadow:0 0 20px rgba(0,0,0,.5);
-}
-.ring:before
-{
-  content:'';
-  position:absolute;
-  top:-3px;
-  left:-3px;
-  width:100%;
-  height:100%;
-  border:3px solid transparent;
-  border-top:3px solid #fff000;
-  border-right:3px solid #fff000;
-  border-radius:50%;
-  animation:animateC 2s linear infinite;
-}
-span
-{
-  display:block;
-  position:absolute;
-  top:calc(50% - 2px);
-  left:50%;
-  width:50%;
-  height:4px;
-  background:transparent;
-  transform-origin:left;
-  animation:animate 2s linear infinite;
-}
-span:before
-{
-  content:'';
-  position:absolute;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  background:#fff000;
-  top:-6px;
-  right:-8px;
-  box-shadow:0 0 20px #fff000;
-}
-@keyframes animateC
-{
-  0%
-  {
-    transform:rotate(0deg);
-  }
-  100%
-  {
-    transform:rotate(360deg);
-  }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
+/* ...existing code... */
 }
 </style>
 <body
 <header>
-    <div class="ring">
-    <h1>HEADER</h1>
-    </div>
-
-<nav>
+  <h1>HEADER</h1>
+  <nav>
     <ul>
-        <li><a href="#home">beranda</a></li>
-        <li><a href="#about">tentang</a></li>
-        <li><a href="#contact">kontak</a></li>
+      <li><a href="#home">beranda</a></li>
+      <li><a href="#about">tentang</a></li>
+      <li><a href="#contact">kontak</a></li>
     </ul>
-</nav>
+  </nav>
 </header>
 <main>
   <section id="home">
 
-    <div class="shadow-dance-container">
-    <h1 class="shadow-dance-text">selamat datang &#128516</h1>
-</div>
+  <h1>selamat datang &#128516</h1>
 
     <p>contoh paragraf HTML</p>
 </section>
