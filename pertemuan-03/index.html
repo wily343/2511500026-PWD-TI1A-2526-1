@@ -43,18 +43,28 @@
             }
 
 .shadow-dance-text {
-    font-size: 4rem;
-    color: #fff;
-    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
-    animation: shadow-dance 2s infinite;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff005e, 0 0 20px #00d4ff;
+  animation: shadow-dance 2s ease-in-out infinite;
 }
 @keyframes shadow-dance {
-    0%, 100% {
-        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
-    }
-    50% {
-        text-shadow: 5px -5px 0 #ff005e, -10px 10px 0 #00d4ff;
-    }
+  0%, 100% {
+    text-shadow: 0 0 10px #ff005e, 0 0 20px #00d4ff;
+    transform: scale(1);
+  }
+  25% {
+    text-shadow: 5px 5px 20px #ff005e, 10px 10px 30px #00d4ff;
+    transform: scale(1.05) rotate(-2deg);
+  }
+  50% {
+    text-shadow: -5px -5px 20px #00d4ff, -10px -10px 30px #ff005e;
+    transform: scale(1.1) rotate(2deg);
+  }
+  75% {
+    text-shadow: 5px -5px 20px #ff005e, -10px 10px 30px #00d4ff;
+    transform: scale(1.05) rotate(-2deg);
+  }
 }
 </style>
 <body>
@@ -70,7 +80,7 @@
 </header>
 <main>
   <section id="home">
-    <h1>selamat datang &#128516;</h1>
+  <h1 class="shadow-dance-text">selamat datang &#128516;</h1>
     <p>contoh paragraf HTML</p>
   </section>
   <section id="about">
