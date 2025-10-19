@@ -67,9 +67,30 @@
               form .form-row textarea {
                 flex: 1 1 auto;
                 padding: 8px;
-                border: 1px solid #ccc;
+                border: 1px solid #081ae4;
                 border-radius: 4px;
               }
+                /* Buttons inside contact */
+                #contact button {
+                  background: #e6eefc;
+                  border: 1px solid #b6d0ff;
+                  color: #064e9b;
+                  padding: 8px 12px;
+                  border-radius: 6px;
+                  cursor: pointer;
+                  transition: background 120ms ease, transform 80ms ease;
+                }
+                #contact button:hover {
+                  background: #d2e6ff;
+                }
+                /* make button blue on click (active) and when focused (keyboard) */
+                #contact button:active,
+                #contact button:focus {
+                  background: #1e6fe6;
+                  color: #fff;
+                  outline: none;
+                  transform: translateY(1px);
+                }
               @media (max-width: 600px) {
                 form .form-row {
                   flex-direction: column;
