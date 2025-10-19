@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>willy b aja</title>
     <style>
-       #about {
-        background-color: rgb(249, 245, 248);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(13, 1, 245, 0.402);
-        margin-bottom: 20px;
-        max-width: 700px;
-            }
+     #about {
+    background-color: rgb(249, 245, 248);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(13, 1, 245, 0.402);
+    margin: 20px auto;
+    max-width: 700px;
+      }
 
             #about h2 {
                 color: rgba(220, 199, 199, 0.84);
@@ -41,6 +41,47 @@
                     margin-bottom: 2px;
                 }
             }
+
+              /* Contact styling similar to #about */
+              #contact {
+                background-color: rgb(249, 245, 248);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(13, 1, 245, 0.402);
+                margin: 20px auto;
+                max-width: 700px;
+              }
+              form .form-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              form .form-row label {
+                width: 180px;
+                text-align: right;
+                padding-right: 12px;
+                font-weight: 600;
+                color: #1e06db;
+              }
+              form .form-row input,
+              form .form-row textarea {
+                flex: 1 1 auto;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+              }
+              @media (max-width: 600px) {
+                form .form-row {
+                  flex-direction: column;
+                  align-items: stretch;
+                }
+                form .form-row label {
+                  width: auto;
+                  text-align: left;
+                  padding-right: 0;
+                  margin-bottom: 6px;
+                }
+              }
 
 .shadow-dance-text {
   font-size: 3rem;
@@ -96,17 +137,28 @@
   <section id="contact">
     <h2>Kontak kami</h2>
     <form action="#">
-      <label for="name">Nama:</label>
-      <input type="text" id="txtnama" name="txtname" placeholder="masukkan nama" required autocomplete="name">
+      <div class="form-row">
+        <label for="txtnama">Nama:</label>
+        <input type="text" id="txtnama" name="txtname" placeholder="masukkan nama" required autocomplete="name">
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="txtemail" name="txtemail" placeholder="masukkan email" required autocomplete="email">
+      <div class="form-row">
+        <label for="txtemail">Email:</label>
+        <input type="email" id="txtemail" name="txtemail" placeholder="masukkan email" required autocomplete="email">
+      </div>
 
-      <label for="message">Pesan:</label>
-      <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="masukkan pesan"  required></textarea>
+      <div class="form-row">
+        <label for="txtpesan">Pesan:</label>
+        <textarea id="txtpesan" name="txtpesan" rows="4" placeholder="masukkan pesan"  required></textarea>
+      </div>
 
-      <button type="submit">Kirim</button>
-      <button type="reset">Batal</button>
+      <div class="form-row">
+        <div style="width:180px"></div>
+        <div>
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+        </div>
+      </div>
     </form>
     <p>from</p>
   </section>
