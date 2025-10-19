@@ -5,97 +5,30 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  color: rgb(61, 62, 62);
   background-color: #f4f4f4;
-  color: rgb(7, 9, 11);
   line-height: 1.5;
 }
-/* Header / Navigation */
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  background: linear-gradient(135deg,#3f37c9,#5eead4);
-  color: #fff;
-  padding: 14px 20px;
-  border-radius: 8px;
-  margin: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+header {
+  background-color: #078ee1;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.brand {
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
   display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 56px;
-  height: 56px;
-  background: rgba(255,255,255,0.12);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 1.1rem;
 }
 
-.brand-text h1 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-.brand-text small{ display:block; opacity:0.9; font-size:0.8rem; }
-
-.main-nav ul{
-  display:flex;
-  gap:16px;
-  list-style:none;
-  margin:0;
-  padding:0;
+header li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 12px;
 }
 
-.main-nav a{
-  color:#fff;
-  text-decoration:none;
-  padding:8px 12px;
-  border-radius:6px;
-  transition:background 0.15s ease, transform 0.15s ease;
-}
-.main-nav a:hover{ background: rgba(255,255,255,0.12); transform: translateY(-2px);} 
-
-/* Page sections */
-#about {
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(13, 1, 245, 0.06);
-}
-
-/* Hero */
-.hero{ text-align:center; padding:30px 20px; }
-.hero-title {
-  font-size: 2.6rem;
-  color: #fff;
-  text-shadow: 0 0 10px #ff005e, 0 0 20px #00d4ff;
-  margin:0 0 10px 0;
-}
-
-/* Forms */
-form{ display:flex; flex-direction:column; gap:10px; max-width:600px; margin:auto; }
-input, textarea{ padding:10px; border:1px solid #ddd; border-radius:6px; font-size:1rem; width:100%; }
-.btn-row{ display:flex; gap:10px; }
-button{ padding:10px 14px; background:#3f37c9; color:#fff; border:none; border-radius:6px; cursor:pointer; }
-button.secondary{ background:#888; }
-
-/* Footer */
-footer{ text-align:center; padding:14px; margin:24px; border-radius:8px; background:#fff; box-shadow:0 6px 12px rgba(0,0,0,0.04);} 
-
-/* Responsive */
-@media (max-width: 700px){
-  .site-header{ flex-direction:column; align-items:flex-start; }
-  .main-nav ul{ flex-direction:row; gap:10px; }
-  .hero-title{ font-size:1.6rem; }
-}
+#about,
