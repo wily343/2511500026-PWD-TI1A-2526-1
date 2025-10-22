@@ -8,3 +8,4 @@
 <ol>“ganti internal css ke eksternal css”.<li>
 <ol>“aturan css untuk body dan global reset”.<li>
 <ol>“styling header”.<li>
+<ol>"“styling footer”.<li>
