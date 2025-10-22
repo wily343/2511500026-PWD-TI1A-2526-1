@@ -155,6 +155,29 @@ header li a {
   text-decoration: none;
   padding: 6px 12px;
 }
+#home,
+#about,
+#contact {
+  background-color:   rgb(249, 245, 248);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(13, 1, 245, 0.402);
+}
+#home h2,
+#about h2,
+#contact h2 {
+  color: #1e06db;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+#home p{
+  text-align: justify;
+}
+
 footer {
   background: #000000;
   color: #ffffff;
