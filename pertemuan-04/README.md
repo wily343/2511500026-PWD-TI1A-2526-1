@@ -10,3 +10,4 @@
 <ol>“styling header”.<li>
 <ol>"“styling footer”.<li>
 <ol>“styling navigasi”.<li>
+<ol>“styling header mode mobile”.<li>
