@@ -194,8 +194,17 @@ header li a:focus {
   outline-offset: 2px;
   background-color: #8406e5;
   border-radius: 6px;
+
 }
 header li a:active {
   background-color: #d508ce;
   transform: translateY(1px);
+}
+@media (max-width: 600px) {
+  header li a {
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 }
