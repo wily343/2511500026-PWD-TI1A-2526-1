@@ -10,3 +10,4 @@ PERTEMUAN -05
 <ol>“class menu-toggle mobile”,<li>
 <ol>“styling nav mobile”,<li>
 <ol>satyling nav menu mobile,<li>
+<ol>“membuat script.js”,<li>
