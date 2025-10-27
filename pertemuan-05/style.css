@@ -227,6 +227,15 @@ header li a {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(120%);
 }
+
+  @media (max-width: 600px) {
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      left: 16px;
+      top: 8px;
+    }
+}
 .menu-toggle {
   display: none;
   background: none;
@@ -235,13 +244,6 @@ header li a {
   font-size: 28px;
   cursor: pointer;
 }
-@media (max-width: 600px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    left: 16px;
-    top: 8px;
-  }
   nav {
     display: none;
     flex-direction: column;
@@ -249,4 +251,6 @@ header li a {
     width: 100%;
     padding: 5px 0;
   }
-}
+  nav.active {
+    display: flex;
+  }
