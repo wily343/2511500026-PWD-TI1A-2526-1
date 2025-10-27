@@ -225,8 +225,6 @@ header li a:active {
     width: 100%;
     padding: 5px 0;
   }
-  }
-
   nav.active {
     display: flex;
     animation: slide-down 0.3s ease;
@@ -254,4 +252,5 @@ header li a {
   border: 1px solid rgba(255, 255, 255, .35);
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(120%);
+}
 }
