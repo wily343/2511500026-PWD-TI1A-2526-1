@@ -207,14 +207,32 @@ header li a:active {
       left: 16px;
       top: 8px;
   }
+      
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 28px;
+        cursor: pointer;
+      }
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #078ee1;
+    width: 100%;
+    padding: 5px 0;
+  }
+  nav.active {
+    display: flex;
+    animation: slide-down 0.3s ease;
+  }
   header {
-  header li a {
-    padding: 16px;
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-
 }
 header h1 {
   font-size: 20px;
@@ -234,23 +252,3 @@ header li a {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(120%);
 }
-
-}
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 28px;
-  cursor: pointer;
-}
-  nav {
-    display: none;
-    flex-direction: column;
-    background: #078ee1;
-    width: 100%;
-    padding: 5px 0;
-  }
-  nav.active {
-    display: flex;
-  }
