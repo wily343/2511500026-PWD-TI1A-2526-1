@@ -201,6 +201,13 @@ header li a:active {
   transform: translateY(1px);
 }
 @media (max-width: 600px) {
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      left: 16px;
+      top: 8px;
+  }
+  header {
   header li a {
     padding: 16px;
     position: sticky;
@@ -228,13 +235,6 @@ header li a {
   backdrop-filter: saturate(120%);
 }
 
-  @media (max-width: 600px) {
-    .menu-toggle {
-      display: block;
-      position: absolute;
-      left: 16px;
-      top: 8px;
-    }
 }
 .menu-toggle {
   display: none;
