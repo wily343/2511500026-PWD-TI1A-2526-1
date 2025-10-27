@@ -194,12 +194,22 @@ header li a:focus {
   outline-offset: 2px;
   background-color: #8406e5;
   border-radius: 6px;
-
+  
 }
 header li a:active {
   background-color: #d508ce;
   transform: translateY(1px);
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
 @media (max-width: 600px) {
   .menu-toggle {
       display: block;
@@ -208,16 +218,6 @@ header li a:active {
       top: 8px;
   }
       
-      .menu-toggle {
-        display: none;
-        background: none;
-        border: none;
-        color: #ffffff;
-        font-size: 28px;
-        cursor: pointer;
-      }
-  }
-
   nav {
     display: none;
     flex-direction: column;
@@ -225,10 +225,13 @@ header li a:active {
     width: 100%;
     padding: 5px 0;
   }
+  }
+
   nav.active {
     display: flex;
     animation: slide-down 0.3s ease;
   }
+
   header {
     position: sticky;
     top: 0;
