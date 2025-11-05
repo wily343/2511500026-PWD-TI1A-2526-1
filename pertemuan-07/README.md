@@ -5,3 +5,5 @@ NIM:2511500026<br>
 hari ini rabu 05.nov.2025 saya belajar:<br>
 <ol
  <li>copy seluruh file dari elerning punya dosen untuk latihan pertemuan -07<li>
+ <li> copy dan rename index php buat file baru get proses php<li>
+ </ol>
