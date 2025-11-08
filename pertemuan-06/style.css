@@ -75,7 +75,7 @@ header li a:active {
 #home h2,
 #about h2,
 #contact h2,
-#IPK h2 {
+#IPK h2{
   color: #f5f5f5;
   border-bottom: 2px solid #f5f5f5;
   padding-bottom: 6px;
@@ -260,4 +260,81 @@ footer {
     text-shadow: 5px -5px 20px #ff005e, -10px 10px 30px #00d4ff;
     transform: scale(1.05) rotate(-2deg);
     }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.nim-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: #111;
+  min-width: 600px; /* agar kolom tidak terlalu rapat di desktop */
+  box-shadow: 0 4px 14px rgba(2,7,77,0.06);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nim-table thead {
+  background: linear-gradient(90deg, #ff009d, #3605f9);
+  color: #fff;
+}
+
+.nim-table th,
+.nim-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nim-table th {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+}
+
+.nim-table tbody tr:nth-child(even) {
+  background: #fbfbff;
+}
+
+.nim-table tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(3, 54, 237, 0.08);
+}
+
+/* Buat kolom NIM lebih menonjol dan rata tengah */
+.nim-table td:nth-child(2),
+.nim-table th:nth-child(2) {
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+/* Responsive kecil: hilangkan min-width dan ubah padding */
+@media (max-width: 600px) {
+  .nim-table {
+    min-width: 0;
+    font-size: 0.95rem;
+  }
+
+  .nim-table th,
+  .nim-table td {
+    padding: 10px 8px;
+  }
+
+  .shadow-dance-text {
+    font-size: 1.6rem;
+  }
+}
+
+/* Utility untuk aksesibilitas (visually hidden) */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
