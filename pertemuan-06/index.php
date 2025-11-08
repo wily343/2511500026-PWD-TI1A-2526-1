@@ -53,6 +53,25 @@
 
 <section id="IPK">   
   <h2>IPK Saya</h2>
+  <div class="ipk-row">
+    <strong>Semester 1</strong>
+    <span>3.50</span>
+  </div>
+
+  <div class="ipk-row">
+    <strong>Semester 2</strong>
+    <span>3.70</span>
+  </div>
+
+  <div class="ipk-row">
+    <strong>Semester 3</strong>
+    <span>3.85</span>
+  </div>
+
+  <div class="ipk-row">
+    <strong>Rata-rata IPK</strong>
+    <span>3.68</span>
+  </div>
     <?php
         $namaMatkul1 = "Logika Informatika";
         $namaMatkul2 = "Pengantar Teknik Informatika";
