@@ -10,5 +10,7 @@ hari ini rabu 05.nov.2025 saya belajar:<br>
  <li>sesion di get proses php<li>
 <li>mennampiilkan session dari  get proses ke get php<li>
 <li>redirect dari get proses php ke get php<li>
+<li>copy past get php <li>
+
 
  </ol>
