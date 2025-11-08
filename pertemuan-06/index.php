@@ -22,13 +22,13 @@
 </header>
 
 <main>
-<!-- HOME -->
+
 <section id="home">
     <h1 class="shadow-dance-text">selamat datang 😄</h1>
     <p>contoh paragraf HTML</p>
 </section>
 
-<!-- ABOUT -->
+
 <section id="about">
     <?php
         $nim = "2511500026";
@@ -49,10 +49,28 @@
     <p><strong>Pekerjaan:</strong> <?php echo $Pekerjaan; ?></p>
     <p><strong>Cita-cita:</strong> <?php echo $citacita; ?></p>
 </section>
-
-<!-- IPK -->
 <section id="IPK">
+  <section id="IPK">
     <h2>IPK Saya</h2>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th {
+            background: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
     <?php
         $namaMatkul1 = "Logika Informatika";
         $namaMatkul2 = "Pengantar Teknik Informatika";
@@ -62,7 +80,7 @@
 
         $sksMatkul1 = $sksMatkul2 = $sksMatkul3 = $sksMatkul4 = $sksMatkul5 = 4;
 
-        // nilai
+        
         $nilaiHadir1 = 100; $nilaiTugas1 = 90; $nilaiUTS1 = 92; $nilaiUAS1 = 88;
         $nilaiHadir2 = 95;  $nilaiTugas2 = 96; $nilaiUTS2 = 92; $nilaiUAS2 = 88;
         $nilaiHadir3 = 100; $nilaiTugas3 = 90; $nilaiUTS3 = 92; $nilaiUAS3 = 90;
@@ -108,7 +126,7 @@
             }
         }
 
-        // hitung grade & bobot
+        
         $grade1 = hitungGrade($nilaiHadir1,$nilaiAkhir1);
         $grade2 = hitungGrade($nilaiHadir2,$nilaiAkhir2);
         $grade3 = hitungGrade($nilaiHadir3,$nilaiAkhir3);
@@ -125,7 +143,7 @@
         $bobot2 = $mutu2 * $sksMatkul2;
         $bobot3 = $mutu3 * $sksMatkul3;
         $bobot4 = $mutu4 * $sksMatkul4;
-        $bobot5 = $mutu5 * $sksMatkul5;  // ✅ FIX salah pakai mutu4
+        $bobot5 = $mutu5 * $sksMatkul5;  // 
 
         function status($grade){
             return ($grade == "D" || $grade == "E") ? "Not Pass" : "Pass";
@@ -161,7 +179,6 @@
     ?>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Kontak kami</h2>
 
