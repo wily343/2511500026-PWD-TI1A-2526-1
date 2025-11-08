@@ -30,7 +30,7 @@
             $nim = "2511500026";
             $Nama = "willy zhea risti";
             $nama = "willy";
-            $Tempat,tgl Lahir = "Pangkal Pinang, 04 Januari 2007";
+            $Tempat tgl Lahir = "Pangkal Pinang, 04 Januari 2007";
             $Hobi = "Mendengarkan musik, memancing, dan bermain game";
             $Pasangan = "for nw i just lovee my self(jommblo jir:v&#128546;)";
             $Pekerjaan ="Belum Ada";
@@ -49,9 +49,9 @@
                     echo $Nama
                     ?>
                 </p>
-                <p><strong>Tempat,tgl Lahir:</strong>
+                <p><strong>Tempat tgl Lahir:</strong>
                     <?php
-                    echo $TempatLahir
+                    echo $Tempat tgl Lahir
                     ?>
                 </p>
                 <p><strong>Hobi:</strong>
