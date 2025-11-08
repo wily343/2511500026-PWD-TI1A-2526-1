@@ -49,28 +49,10 @@
     <p><strong>Pekerjaan:</strong> <?php echo $Pekerjaan; ?></p>
     <p><strong>Cita-cita:</strong> <?php echo $citacita; ?></p>
 </section>
-<section id="IPK">
-  <section id="IPK">
-    <h2>IPK Saya</h2>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #aaa;
-        }
-        th {
-            background: #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        td {
-            padding: 8px;
-            text-align: center;
-        }
-    </style>
+
+
+<section id="IPK">   
+  <h2>IPK Saya</h2>
     <?php
         $namaMatkul1 = "Logika Informatika";
         $namaMatkul2 = "Pengantar Teknik Informatika";
