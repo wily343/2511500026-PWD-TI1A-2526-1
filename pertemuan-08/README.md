@@ -17,3 +17,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>menambahkan button kirim dan batal</li>
 <li>memambahkan style css agar terlihat rapih</li>
 <li>membuat java scrip dari sumbit jadi reset</li>
+<li>membuat nilai atau Nim</li>
+<li>menggnti nama di footer</li>
+<li>membuat tombol nim menjadi menampilkan ketika selesai mengetik akan keluar history nya</li>
