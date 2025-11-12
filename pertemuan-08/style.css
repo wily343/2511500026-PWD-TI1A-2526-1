@@ -1,3 +1,4 @@
+/* === GLOBAL STYLE === */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ body {
   line-height: 1.5;
 }
 
+/* === HEADER === */
 header {
   background: #003366;
   color: #fff;
@@ -49,9 +51,11 @@ header li a:active {
   transform: translateY(1px);
 }
 
-#home:target~header nav a[href="#home"],
-#about:target~header nav a[href="#about"],
-#contact:target~header nav a[href="#contact"] {
+/* Highlight menu saat section aktif */
+#home:target ~ header nav a[href="#home"],
+#about:target ~ header nav a[href="#about"],
+#contact:target ~ header nav a[href="#contact"],
+#profil:target ~ header nav a[href="#profil"] {
   background: #fff;
   color: #003366;
   font-weight: bold;
@@ -59,9 +63,11 @@ header li a:active {
   transition: all 0.3s ease;
 }
 
+/* === SECTION STYLE === */
 #home,
 #about,
-#contact {
+#contact,
+#profil {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -72,7 +78,8 @@ header li a:active {
 
 #home h2,
 #about h2,
-#contact h2 {
+#contact h2,
+#profil h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -84,7 +91,26 @@ header li a:active {
   text-align: justify;
 }
 
-#about p,
+/* === ABOUT SECTION === */
+#about p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#about strong {
+  min-width: 180px;
+  color: #003366;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 16px;
+  flex-shrink: 0;
+}
+
+/* === CONTACT SECTION === */
 #contact label {
   display: flex;
   justify-content: flex-start;
@@ -94,8 +120,7 @@ header li a:active {
   border-bottom: 1px solid #e6e6e6;
 }
 
-#about strong,
-#contact label>span {
+#contact label > span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -151,6 +176,72 @@ header li a:active {
   transform: translateY(-1px);
 }
 
+/* === PROFIL SECTION === */
+#profil label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#profil span {
+  min-width: 180px;
+  color: #003366;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 16px;
+  flex-shrink: 0;
+}
+
+#profil input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  color: #000;
+  font-weight: normal;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#profil button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+#profil button[type="submit"] {
+  background-color: #003366;
+  color: #fff;
+  font-weight: 600;
+}
+
+#profil button[type="reset"] {
+  background-color: #b4b4b4;
+  color: #272727;
+  font-weight: 500;
+}
+
+#profil button[type="submit"]:hover {
+  background-color: #0379ee;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#profil button[type="reset"]:hover {
+  background-color: #cccccc;
+  transform: translateY(-1px);
+}
+
+/* === FOOTER === */
 footer {
   background: #222;
   color: #aaa;
@@ -158,6 +249,7 @@ footer {
   padding: 10px;
 }
 
+/* === MENU TOGGLE (RESPONSIVE) === */
 .menu-toggle {
   display: none;
   background: none;
@@ -167,6 +259,7 @@ footer {
   cursor: pointer;
 }
 
+/* === RESPONSIVE DESIGN === */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -215,14 +308,17 @@ footer {
     backdrop-filter: saturate(120%);
   }
 
+  /* Responsif untuk about & contact */
   #about p,
-  #contact label {
+  #contact label,
+  #profil label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
-  #contact label>span {
+  #contact label > span,
+  #profil span {
     text-align: left;
     padding-right: 0;
     margin-bottom: 2px;
@@ -230,7 +326,9 @@ footer {
 
   #contact input,
   #contact textarea,
-  #contact button {
+  #contact button,
+  #profil input,
+  #profil button {
     width: 100%;
   }
 }
