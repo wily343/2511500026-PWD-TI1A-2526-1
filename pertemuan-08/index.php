@@ -103,8 +103,8 @@ endif;
         <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
       <?php endif; ?>
 
-      <section id="saya">
-        <h2>saya</h2>
+      <section id="profil pengunjung pendaftaran">
+        <h2>profil pengunjung pendaftaran</h2>
         <form action="proses.php" method="POST">
 
           <label for="txtNim"><span>NIM:</span>
@@ -146,6 +146,9 @@ endif;
         <label for="txtNama Adik"><span>Nama Adik:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
         </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
 
     </section>
   </main>

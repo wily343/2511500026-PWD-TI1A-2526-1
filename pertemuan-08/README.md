@@ -14,3 +14,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>menambahkan soal uts ke vs code</li>
 <li>mengganti nama secion di index.php</li>
 <li>memasukan kode section ke dalam index php</li>
+<li>menambahkan button kirim dan batal</li>
