@@ -12,3 +12,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 </ol>
 <ol>
 <li>menambahkan soal uts ke vs code</li>
+<li>mengganti nama secion di index.php</li>
