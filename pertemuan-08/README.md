@@ -16,3 +16,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>memasukan kode section ke dalam index php</li>
 <li>menambahkan button kirim dan batal</li>
 <li>memambahkan style css agar terlihat rapih</li>
+<li>membuat java scrip dari sumbit jadi reset</li>
