@@ -20,3 +20,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>membuat nilai atau Nim</li>
 <li>menggnti nama di footer</li>
 <li>membuat tombol nim menjadi menampilkan ketika selesai mengetik akan keluar history nya</li>
+<li>menggati nama saya di home</li>
+<li>membuat htmlspecialchars agar bisa melihat history</li>
