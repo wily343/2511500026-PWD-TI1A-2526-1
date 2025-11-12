@@ -103,7 +103,49 @@ endif;
         <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
       <?php endif; ?>
 
+      <section id="saya">
+        <h2>saya</h2>
+        <form action="proses.php" method="POST">
 
+          <label for="txtNim"><span>NIM:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtNama Lengkap"><span>Nama Lengkap:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtTempat lahir"><span>Tempat lahir:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtTanggal Lahir"><span>Tanggal Lahir:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtHobi"><span>Hobi:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtPasangan"><span>Pasangan:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtNama OrangTua"><span>Nama OrangTua:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtNama Kakak"><span>Nama Kakak:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
+
+        <label for="txtNama Adik"><span>Nama Adik:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
 
     </section>
   </main>
