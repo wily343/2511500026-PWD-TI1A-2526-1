@@ -15,3 +15,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>mengganti nama secion di index.php</li>
 <li>memasukan kode section ke dalam index php</li>
 <li>menambahkan button kirim dan batal</li>
+<li>memambahkan style css agar terlihat rapih</li>
