@@ -54,31 +54,23 @@ endif;
 
     <section id="about">
       <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
-      $tempat = "Jebus";
-      ?>
-      <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
-        <?php
-        echo $NIM;
-        ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
-        <?php
-        echo $Nama;
-        ?> &#128526;
-      </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+        $nim = "2511500026";
+        $Nama = "willy zhea risti";
+        $TempatLahir = "Pangkal Pinang, 04 Januari 2007";
+        $Hobi = "Mendengarkan musik, memancing, dan bermain game";
+        $Pasangan = "for now i just love myself (jomblo 😭)";
+        $Pekerjaan = "Belum Ada";
+        $citacita = "Menjadi programmer, proplayer, engineer";
+    ?>
+
+    <h2>Tentang Saya</h2>
+    <p><strong>NIM:</strong> <?php echo $nim; ?></p>
+    <p><strong>Nama:</strong> <?php echo $Nama; ?></p>
+    <p><strong>Tempat Lahir:</strong> <?php echo $TempatLahir; ?></p>
+    <p><strong>Hobi:</strong> <?php echo $Hobi; ?></p>
+    <p><strong>Pasangan:</strong> <?php echo $Pasangan; ?></p>
+    <p><strong>Pekerjaan:</strong> <?php echo $Pekerjaan; ?></p>
+    <p><strong>Cita-cita:</strong> <?php echo $citacita; ?></p>
     </section>
 
     <section id="contact">
