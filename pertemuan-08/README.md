@@ -10,15 +10,3 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>silahkan diisi sesuai proses pengerjaan kalian masing-masing</li>
 </ol>
-<ol>
-<li>menambahkan soal uts ke vs code</li>
-<li>mengganti nama secion di index.php</li>
-<li>memasukan kode section ke dalam index php</li>
-<li>menambahkan button kirim dan batal</li>
-<li>memambahkan style css agar terlihat rapih</li>
-<li>membuat java scrip dari sumbit jadi reset</li>
-<li>membuat nilai atau Nim</li>
-<li>menggnti nama di footer</li>
-<li>membuat tombol nim menjadi menampilkan ketika selesai mengetik akan keluar history nya</li>
-<li>menggati nama saya di home</li>
-<li>membuat htmlspecialchars agar bisa melihat history</li>
