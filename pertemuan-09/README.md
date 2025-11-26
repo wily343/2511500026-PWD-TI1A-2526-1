@@ -9,3 +9,5 @@
   <li>memuat fungsi php<li>
   <li>menambahkan format tanggal<li>
   <li>menambahkan kode baru function biodata di fungsi.php<li>
+  <li>menghapus bagian dari indeSx.html di tentang saya<li>
+  <li>selesai<li>

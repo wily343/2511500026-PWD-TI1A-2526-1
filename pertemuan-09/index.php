@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once __DIR__ . '/fungsi.php';
+
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
   $sesnama = $_SESSION["sesnama"];
@@ -17,20 +19,6 @@ if (isset($_SESSION["sespesan"])):
 endif;
 
 
-$biodata = $_SESSION["biodata"] ?? [];
-
-$fieldConfig = [
-    "nim"        => ["label" => "NIM:",            "suffix" => ""],
-    "nama"       => ["label" => "Nama Lengkap:",   "suffix" => " &#128526;"],
-    "tempat"     => ["label" => "Tempat Lahir:",   "suffix" => ""],
-    "tanggal"    => ["label" => "Tanggal Lahir:",  "suffix" => ""],
-    "hobi"       => ["label" => "Hobi:",           "suffix" => " &#127926;"],
-    "pasangan"   => ["label" => "Pasangan:",       "suffix" => " &hearts;"],
-    "pekerjaan"  => ["label" => "Pekerjaan:",      "suffix" => " &copy; 2025"],
-    "ortu"       => ["label" => "Nama Orang Tua:", "suffix" => ""],
-    "kakak"      => ["label" => "Nama Kakak:",     "suffix" => ""],
-    "adik"       => ["label" => "Nama Adik:",      "suffix" => ""],
-];
 ?>
 
 <!DOCTYPE html>
@@ -118,17 +106,26 @@ $fieldConfig = [
 
     </section>
 
+    <?php
+    $biodata =$_SESSION["biodata"] ?? [];
+
+    $fieldConfig = [
+      "nim" => ["label" => "NIM:", "suffix" => ""],
+      "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128526;"],
+      "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
+      "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
+      "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
+      "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
+      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => " &copy; 2025"],
+      "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
+      "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
+      "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+    ];
+    ?>
+
     <section id="about">
-        <h2>tentang saya</h2>
-         <?php foreach ($fieldconfiq as $kunci => $metadata): ?>
-         <p>
-          strong><?= $metadata["label"] ?></strong>
-          <?= htmlspecialchars(string: $biodata[$konci] ?? "") ?>
-          <?= $metadata["suffix"] ?>
-         </P>
-          <?php endforeach; ?>
-        
-        
+      <h2>Tentang Saya</h2>
+      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
 
     <section id="contact">
