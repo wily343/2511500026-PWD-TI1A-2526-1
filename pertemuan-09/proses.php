@@ -10,14 +10,14 @@ $_SESSION["sespesan"] = $sespesan;
 $arrBiodata =[
      "nim" => $_POST["txtNim"] ?? "",
      "nama" => $_POST["txtnmLengkap"] ?? "",
-     "tempat" => $_POST["txtNim"] ?? "",
-     "tanggal" => $_POST["txtNim"] ?? "",
-     "hobi" => $_POST["txtNim"] ?? "",
-     "pasangan" => $_POST["txtNim"] ?? "",
-     "pekerjaan" => $_POST["txtNim"] ?? "",
-     "ortu" => $_POST["txtNim"] ?? "",
-     "kakak" => $_POST["txtNim"] ?? "",
-     "adik" => $_POST["txtNim"] ?? "",
+     "tempat" => $_POST["txtT4Lhr"] ?? "",
+     "tanggal" => $_POST["txtTglLhr"] ?? "",
+     "hobi" => $_POST["txtHobi"] ?? "",
+     "pasangan" => $_POST["txtPasangan"] ?? "",
+     "pekerjaan" => $_POST["txtKerja"] ?? "",
+     "ortu" => $_POST["txtNmOrtu"] ?? "",
+     "kakak" => $_POST["txtNmKakak"] ?? "",
+     "adik" => $_POST["txtNmAdik"] ?? "",
 ];
      
 $_SESSION["txtNim"] = $txtNim;
