@@ -2,3 +2,5 @@
 <ol>
 <li>membuat koneksi.php dan membuat codenya<li>
 <li>membuat table dan membuka phpmyadmin<li>
+<li>membuat crate tabel menggunakan email nama dan pesan di phpmyamin<li>
+
