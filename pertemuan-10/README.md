@@ -7,4 +7,5 @@
 <li>mengganti kode read_inc.php<ol>
 <li>mengganti kode di index.php pada line 146,<?php include 'read_inc.php'; ?> <ol>
 <li>menghapus line 133-141 di index.php<ol>
+<li>membuat local host dan menaruhnyaa di pertemuan-10<ol>
 
