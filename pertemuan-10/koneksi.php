@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "db_pwdd2025";
+$db   = "db_pwd2025";
 
 $conn = mysqli_con(nect($host, $user, $pass, $db);
 
