@@ -1,0 +1,11 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "db_pwdd2025";
+
+$conn = mysqli_con(nect($host, $user, $pass, $db);
+
+if(!$conn) {
+    die("koneksi gagal: " . mysqli_connect_error());
+}
