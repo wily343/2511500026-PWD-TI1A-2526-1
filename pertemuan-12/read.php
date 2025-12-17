@@ -6,7 +6,7 @@ require 'koneksi.php';
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
-    die("quarry eror: " . mysqli_error($conn));
+    die("Query eror: " . mysqli_error($conn));
 }
 ?>
 
@@ -32,11 +32,11 @@ if (!$q) {
   <tr>
     <th>No</th>
     <th>aksi</th>
-    <th>no</th>
+    <th>ID</th>
     <th>Nama</th>
     <th>Email</th>
     <th>Pesan</th>
-    <th>Tanggal dan Waktu</th>
+    <th>Tanggal-</th>
   </tr>
 
   <?php $no = 1; 
@@ -48,7 +48,8 @@ if (!$q) {
     <td><?= htmlspecialchars($row['cnama']); ?></td>
     <td><?= htmlspecialchars($row['cemail']); ?></td>
     <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-    <td><?= $row['dcreated_at']; ?></td>
+    <td><?= date('d-m-Y H:i', strtotime($row['dcreated_at'])); ?></td>
+
     </tr>
     <?php endwhile;?>
 </table>

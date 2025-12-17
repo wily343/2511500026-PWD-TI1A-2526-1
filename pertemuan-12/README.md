@@ -7,3 +7,4 @@
 <li>menambahkan doctype html di edit php<ol> 
 <li>menambakan file baru bernama proses_update.php<ol>
 <li>menambahkan kode di proses_udate.php<ol>
+<li>menambahkan waktu tanggal di phpmyadmin<ol>
