@@ -22,7 +22,9 @@ if (!$q) {
             "pesan" => $row["cpesan"] ?? ""
         ];
 
-        echo tampilkanBiodata($fieldContact, $arrContact);
+       echo tampilkanBiodata($fieldContact, $arrContact);
+       echo "<hr>";
+    
     }
 }
 ?>

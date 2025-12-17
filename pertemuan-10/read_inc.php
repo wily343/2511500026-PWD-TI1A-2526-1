@@ -1,5 +1,6 @@
 <?php
 require 'koneksi.php';
+require 'tampilkanBiodata.php'; // or define the function here
 
 $fieldContact = [
     "nama"  => ["label" => "Nama:", "suffix" => ""],
@@ -23,6 +24,8 @@ if (!$q) {
         ];
 
         echo tampilkanBiodata($fieldContact, $arrContact);
+
+    }
     }
 }
 ?>
