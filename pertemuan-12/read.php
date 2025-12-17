@@ -1,10 +1,34 @@
 <?php
+session_start();
+require 'fungsi.php';
 require 'koneksi.php';
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
 $q = mysqli_query($conn, $sql);
+if (!$q) {
+    die("quarry eror: " . mysqli_error($conn));
+}
 ?>
-<table border="1" cellpadding="8" cellspacing="0">
+
+<?php
+    $flash_success = $_SESSION['flash_success'] ?? '';
+    $flash_error = $_SESSION['flash_error'] ?? '';  
+    unset($_SESSION['flash_success'], $_SESSION['flash_error']);
+ ?>
+
+  <?php if (!empty($flash_success)): ?>
+    <div style="color: green; border: 1px solid green; padding: 8px; margin-bottom: 16px;">
+      <?= $flash_success; ?>
+    </div>
+  <?php endif; ?>
+
+    <?php if (!empty($flash_error)): ?>
+    <div style="color: red; border: 1px solid red; padding: 8px; margin-bottom: 16px;">
+      <?= $flash_error; ?>
+    </div>
+  <?php endif; ?>
+
+  <table border="1" cellpadding="8" cellspacing="0">
   <tr>
     <th>No</th>
     <th>aksi</th>
