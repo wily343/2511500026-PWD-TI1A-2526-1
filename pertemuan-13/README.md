@@ -7,4 +7,5 @@
 <li>update file proses_delate.php<li>
 <li>menambahkan prameter cid untuk link delate di pread php<li>
 <li>memperbaikki file_proses.php agar menggunakan prameter cid<li>
+<li>menambahkan konfirmasi penghapusan di read.php untuk link delate<li>
 </ol>
