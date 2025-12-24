@@ -6,4 +6,5 @@
 <li>mecopy seluruh kode di proses_udate.php ke prpses_delate.php<li>
 <li>update file proses_delate.php<li>
 <li>menambahkan prameter cid untuk link delate di pread php<li>
+<li>memperbaikki file_proses.php agar menggunakan prameter cid<li>
 </ol>
