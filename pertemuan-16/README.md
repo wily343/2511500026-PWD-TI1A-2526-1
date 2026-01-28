@@ -9,3 +9,6 @@
 <li>mengubah kode yang ada di fungsi php<li>
 <li>menabhakn kode untuk biodata simpan<li>
 <li>menabhkan kirim dan batal di edit.php<li>
+<li>merubah kode prosesbio.php<li>
+<li>menabahkan form menthod untuk lebih aman di update<li>
+<li>menabhakn ketika data berhasil di simpan dan gagal menyimpan data<li>

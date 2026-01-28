@@ -1,26 +1,24 @@
 <?php
 session_start();
-require __DIR__ . './koneksi.php';
-require_once __DIR__ . '/fungsi.php';
+require 'koneksi.php';
+require 'fungsi.php';
 
-/*
-	ikuti cara penulisan proses.php untuk validasi, sanitasi, RPG, data old
-	dan insert ke tbl_tamu termasuk flash message ke index.php#biodata
-	bedanya, kali ini diterapkan untuk biodata dosen bukan tamu
-*/
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    redirect_ke('biodata_dosen.php');
+}
 
-$arrBiodata = [
-  "kodedos" => $_POST["txtKodeDos"] ?? "",
-  "nama" => $_POST["txtNmDosen"] ?? "",
-  "alamat" => $_POST["txtAlRmh"] ?? "",
-  "tanggal" => $_POST["txtTglDosen"] ?? "",
-  "jja" => $_POST["txtJJA"] ?? "",
-  "prodi" => $_POST["txtProdi"] ?? "",
-  "nohp" => $_POST["txtNoHP"] ?? "",
-  "pasangan" => $_POST["txNamaPasangan"] ?? "",
-  "anak" => $_POST["txtNmAnak"] ?? "",
-  "ilmu" => $_POST["txtBidangIlmu"] ?? ""
-];
-$_SESSION["biodata"] = $arrBiodata;
+$nidn  = bersihkan($_POST['nidn']);
+$nama  = bersihkan($_POST['nama']);
+$email = bersihkan($_POST['email']);
+$prodi = bersihkan($_POST['prodi']);
 
-header("location: index.php#about");
+$sql = "INSERT INTO tbl_biodata_dosen (nidn,nama,email,prodi)
+        VALUES ('$nidn','$nama','$email','$prodi')";
+
+if (mysqli_query($conn, $sql)) {
+    $_SESSION['status'] = "Data berhasil disimpan";
+} else {
+    $_SESSION['status'] = "Gagal menyimpan data";
+}
+
+redirect_ke('biodata_list.php');
