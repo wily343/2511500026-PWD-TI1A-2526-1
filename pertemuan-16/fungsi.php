@@ -1,6 +1,9 @@
 <?php
 function bersihkan($data) {
-    return htmlspecialchars(trim($data));
+    if (!is_string($data)) {
+        return '';
+    }
+    return htmlspecialchars(trim($data), ENT_QUOTES, 'UTF-8');
 }
 
 function redirect_ke($url) {

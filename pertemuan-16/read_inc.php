@@ -1,5 +1,6 @@
 <?php
 require 'koneksi.php';
+require 'fungsi.php';   // ✅ FIX LINE 27 (fungsi sekarang dikenali)
 
 $fieldContact = [
   "nama" => ["label" => "Nama:", "suffix" => ""],
@@ -13,7 +14,7 @@ if (!$stmt) {
 } else {
   mysqli_stmt_execute($stmt);
   $q = mysqli_stmt_get_result($stmt);
-  
+
   if (mysqli_num_rows($q) === 0) {
     echo "<p>Belum ada data tamu yang tersimpan.</p>";
   } else {
@@ -24,7 +25,7 @@ if (!$stmt) {
         "pesan" => $row["cpesan"] ?? "",
       ];
       echo "<div style='margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;'>";
-      echo tampilkanBiodata($fieldContact, $arrContact);
+      echo tampilkanBiodata($fieldContact, $arrContact); // ✅ LINE 27 FIX
       echo "</div>";
     }
   }
