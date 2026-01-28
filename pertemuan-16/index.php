@@ -39,74 +39,28 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <section id="biodata">
-      <h2>Biodata Dosen</h2>
+      <h2>Form Biodata Dosen</h2>
       <form action="proses_bio.php" method="POST">
 
-        <label for="txtKodeDos"><span>Kode Dosen:</span>
-          <input type="text" id="txtKodeDos" name="txtKodeDos" placeholder="Masukkan Kode Dosen" required>
+        <label for="nidn"><span>NIDN:</span>
+          <input type="text" id="nidn" name="nidn" placeholder="Masukkan NIDN" required>
         </label>
 
-        <label for="txtNmDosen"><span>Nama Dosen:</span>
-          <input type="text" id="txtNmDosen" name="txtNmDosen" placeholder="Masukkan Nama Dosen" required>
+        <label for="nama"><span>Nama:</span>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
         </label>
 
-        <label for="txtAlRmh"><span>Alamat Rumah:</span>
-          <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>
+        <label for="email"><span>Email:</span>
+          <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
         </label>
 
-        <label for="txtTglDosen"><span>Tanggal Jadi Dosen:</span>
-          <input type="text" id="txtTglDosen" name="txtTglDosen" placeholder="Masukkan Tanggal Jadi Dosen" required>
-        </label>
-
-        <label for="txtJJA"><span>JJA Dosen:</span>
-          <input type="text" id="txtJJA" name="txtJJA" placeholder="Masukkan JJA Dosen" required>
-        </label>
-
-        <label for="txtProdi"><span>Homebase Prodi:</span>
-          <input type="text" id="txtProdi" name="txtProdi" placeholder="Masukkan Homebase Prodi" required>
-        </label>
-
-        <label for="txtNoHP"><span>Nomor HP:</span>
-          <input type="text" id="txtNoHP" name="txtNoHP" placeholder="Masukkan Nomor HP" required>
-        </label>
-
-        <label for="txNamaPasangan"><span>Nama Pasangan:</span>
-          <input type="text" id="txNamaPasangan" name="txNamaPasangan" placeholder="Masukkan Nama Pasangan" required>
-        </label>
-
-        <label for="txtNmAnak"><span>Nama Anak:</span>
-          <input type="text" id="txtNmAnak" name="txtNmAnak" placeholder="Masukkan Nama Anak" required>
-        </label>
-
-        <label for="txtBidangIlmu"><span>Bidang Ilmu Dosen:</span>
-          <input type="text" id="txtBidangIlmu" name="txtBidangIlmu" placeholder="Masukkan Bidang Ilmu Dosen" required>
+        <label for="prodi"><span>Prodi:</span>
+          <input type="text" id="prodi" name="prodi" placeholder="Masukkan Prodi" required>
         </label>
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-    </section>
-
-    <?php
-    $biodata = $_SESSION["biodata"] ?? [];
-
-    $fieldConfig = [
-      "kodedos" => ["label" => "Kode Dosen:", "suffix" => ""],
-      "nama" => ["label" => "Nama Dosen:", "suffix" => " &#128526;"],
-      "alamat" => ["label" => "Alamat Rumah:", "suffix" => ""],
-      "tanggal" => ["label" => "Tanggal Jadi Dosen:", "suffix" => ""],
-      "jja" => ["label" => "JJA Dosen:", "suffix" => " &#127926;"],
-      "prodi" => ["label" => "Homebase Prodi:", "suffix" => " &hearts;"],
-      "nohp" => ["label" => "Nomor HP:", "suffix" => " &copy; 2025"],
-      "pasangan" => ["label" => "Nama Pasangan:", "suffix" => ""],
-      "anak" => ["label" => "Nama Anak:", "suffix" => ""],
-      "ilmu" => ["label" => "Bidang Ilmu Dosen:", "suffix" => ""],
-    ];
-    ?>
-
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
 
     <?php
