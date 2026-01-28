@@ -1,7 +1,7 @@
-<?php
+<?php 
 session_start();
-require_once 'koneksi.php';
-require_once 'fungsi.php';
+require 'koneksi.php';
+require 'fungsi.php';
 
 $sql = "SELECT * FROM tbl_biodata_mahasiswa ORDER BY id DESC";
 $q = mysqli_query($conn, $sql);
@@ -11,9 +11,12 @@ if (!$q) {
 }
 ?>
 
+<h2>Data Biodata Mahasiswa</h2>
+
 <table border="1" cellpadding="8" cellspacing="0">
   <tr>
     <th>No</th>
+    <th>Aksi</th>
     <th>NIM</th>
     <th>Nama Lengkap</th>
     <th>Tempat Lahir</th>
@@ -31,6 +34,13 @@ if (!$q) {
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
   <tr>
     <td><?= $no++; ?></td>
+    <td>
+      <a href="edit_biodata.php?id=<?= (int)$row['id']; ?>">Edit</a> |
+      <a onclick="return confirm('Yakin hapus biodata <?= htmlspecialchars($row['nama_lengkap']); ?>?')"
+         href="proses_delete_biodata.php?id=<?= (int)$row['id']; ?>">
+         Delete
+      </a>
+    </td>
     <td><?= htmlspecialchars($row['nim']); ?></td>
     <td><?= htmlspecialchars($row['nama_lengkap']); ?></td>
     <td><?= htmlspecialchars($row['tempat_lahir']); ?></td>

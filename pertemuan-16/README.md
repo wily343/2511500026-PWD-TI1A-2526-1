@@ -6,4 +6,5 @@
 <li>membuat tabel baru nama tabel bioata dosen<li>
 <li>mengubah kode di koneksi  php<li>
 <li>membuat kode untuk menaytukan koneksi php tabel dosen<li>
+<li>mengubah kode yang ada di fungsi php<li>
 <li>
