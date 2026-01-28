@@ -7,4 +7,5 @@
 <li>mengubah kode di koneksi  php<li>
 <li>membuat kode untuk menaytukan koneksi php tabel dosen<li>
 <li>mengubah kode yang ada di fungsi php<li>
-<li>
+<li>menabhakn kode untuk biodata simpan<li>
+<li>menabhkan kirim dan batal di edit.php<li>

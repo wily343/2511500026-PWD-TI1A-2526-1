@@ -97,6 +97,34 @@
 
     <main>
       <section id="contact">
+        <h2>Form Biodata Dosen</h2>
+
+        <?php
+        if (isset($_SESSION['status'])) {
+            echo "<p>{$_SESSION['status']}</p>";
+            unset($_SESSION['status']);
+        }
+        ?>
+
+        <form method="POST" action="biodata_simpan.php">
+          NIDN <br>
+          <input type="text" name="nidn" required><br><br>
+
+          Nama <br>
+          <input type="text" name="nama" required><br><br>
+
+          Email <br>
+          <input type="email" name="email" required><br><br>
+
+          Prodi <br>
+          <input type="text" name="prodi" required><br><br>
+
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+        </form>
+      </section>
+
+      <section id="contact">
         <h2>Edit Buku Tamu</h2>
         <?php if (!empty($flash_error)): ?>
           <div style="padding:10px; margin-bottom:10px; 
