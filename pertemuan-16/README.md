@@ -13,3 +13,5 @@
 <li>menabahkan form menthod untuk lebih aman di update<li>
 <li>menabhakn ketika data berhasil di simpan dan gagal menyimpan data<li>
 <li>menabhakn link delate dan edit di index.php<li>
+<li>menabahakn biodata upate php<li>
+<li>
